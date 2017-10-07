@@ -1,0 +1,194 @@
+*, ul{
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 100%;
+	font-family: Arial, sans-serif;
+}
+
+/*section h1{
+	border: red 1px solid;
+}*/
+
+.container{
+	width: 80%;
+	margin: auto;
+	padding: 1.5em 0;
+}
+header {
+	background: #39a9aa;
+	color: white;
+	min-height: 80px;
+	display: flex;
+	border-bottom: 3px solid orange;
+}
+header .container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+header a{
+	flex-basis: 33%;
+	padding: 0.8em;
+	font-size: 1.2em;
+	color: #7bfdff;
+	text-decoration: none;
+}
+header a:hover{
+	color: white;
+	background: #f7615f;	
+}
+
+
+
+#about{
+	background: #5ff5f7;
+}
+#about h1{
+	font-size: 600%;
+	line-height: 0.8;
+	color: rgba(255,255,255,0.5);
+}
+#about #about-cont{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#about img{
+	border-radius: 100%;
+	width: 30%;
+}
+
+
+
+
+#works{
+	background: #f7615f;
+}
+#works h1{
+	font-size: 600%;
+	line-height: 0.8;
+	color: rgba(255,255,255,0.4);
+}
+#works-cont{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.work{
+	margin-bottom: 10px;
+	width: 33%;
+	text-align: center;
+}
+.work img{
+	width: 90%;
+}
+
+
+
+
+#contact{
+	background: #aa211f;
+	color: #7bfdff;
+}
+#contact .container{
+	display: flex;
+	justify-content: space-between;
+	
+}
+#contact h1{
+	font-size: 600%;
+	line-height: 0.6;
+	
+	color: rgba(255,255,255,0.3);
+
+
+}
+#contact #contact-cont{
+	display: flex;
+	flex-direction: column;
+}
+#contact-cont a,#contact-cont span{
+	text-decoration: none;
+	font-size: 1.4em;
+	font-weight: bolder;
+	color: #7bfdff;
+	line-height: 1.5;
+}
+
+
+
+
+@media (max-width: 768px){
+	header .container{
+		flex-direction: column;
+		text-align: center;
+	}
+	#about-cont{
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+	#about img{
+		margin-bottom: 5px;
+		width: 60%
+	}
+	.work{
+		width: 50%;
+	}
+	#contact .container{
+		flex-direction: column;
+	}
+}
+@media (max-width: 375px){
+	#about img{
+		width: 75%
+	}
+	#works-cont{
+		justify-content: center;
+	}
+	.work{
+		width: 90%;
+	}
+	#about h1{
+		font-size: 400%;
+		text-align: center;
+	}
+	#works h1{
+		font-size: 400%;
+		text-align: center;
+
+	}
+	#contact h1{
+		font-size: 400%
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
